@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veratale-Foundation // Wiki System</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="snowCanvas"></canvas>
+
+  <header class="header">
+    <div class="logo">Veratale - <span>Foundation</span></div>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Pesquisar arquivos e diretórios...">
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="folder-header">
+        <span>📁 DIRETÓRIOS</span>
+      </div>
+      
+      <div class="folder" data-folder="projetos">
+        <div class="folder-title">📂 Projetos Secretos <span class="arrow">▶</span></div>
+        <ul class="folder-content">
+          <li><a href="#artigo1" class="nav-link">🔹 Projeto Quantum</a></li>
+          <li><a href="#artigo2" class="nav-link">🔹 Protocolo Aurora</a></li>
+        </ul>
+      </div>
+
+      <div class="folder" data-folder="banco-dados">
+        <div class="folder-title">📂 Banco de Dados <span class="arrow">▶</span></div>
+        <ul class="folder-content">
+          <li><a href="#artigo3" class="nav-link">🔹 Neural Link v2</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content">
+      <article id="artigo1" class="wiki-card" data-title="projeto quantum">
+        <div class="card-tag">CLASSIFICADO</div>
+        <h2 class="item-title">PROJETO QUANTUM</h2>
+        <div class="image-wrapper">
+          <img src="https://picsum.photos/800/400?random=1" alt="Quantum Core" class="item-image">
+          <div class="overlay">Clique para ampliar</div>
+        </div>
+        <div class="item-description">
+          <p>Desenvolvimento de processamento quântico de alta densidade. Capaz de simular realidades sintéticas em milissegundos.</p>
+          <div class="stats">
+            <div><strong>Status:</strong> Ativo</div>
+            <div><strong>Segurança:</strong> Nível 5</div>
+          </div>
+        </div>
+      </article>
+
+      <article id="artigo2" class="wiki-card" data-title="protocolo aurora">
+        <div class="card-tag">CONFIDENCIAL</div>
+        <h2 class="item-title">PROTOCOLO AURORA</h2>
+        <div class="image-wrapper">
+          <img src="https://picsum.photos/800/400?random=2" alt="Aurora Protocol" class="item-image">
+          <div class="overlay">Clique para ampliar</div>
+        </div>
+        <div class="item-description">
+          <p>Rede neural autônoma responsável pela regulação do clima artificial em colônias orbitais.</p>
+          <div class="stats">
+            <div><strong>Status:</strong> Em Teste</div>
+            <div><strong>Segurança:</strong> Nível 4</div>
+          </div>
+        </div>
+      </article>
+
+      <article id="artigo3" class="wiki-card" data-title="neural link v2">
+        <div class="card-tag">PÚBLICO</div>
+        <h2 class="item-title">NEURAL LINK V2</h2>
+        <div class="image-wrapper">
+          <img src="https://picsum.photos/800/400?random=3" alt="Neural Link" class="item-image">
+          <div class="overlay">Clique para ampliar</div>
+        </div>
+        <div class="item-description">
+          <p>Interface cérebro-máquina de segunda geração com suporte a transferência direta de dados sintéticos.</p>
+          <div class="stats">
+            <div><strong>Status:</strong> Concluído</div>
+            <div><strong>Segurança:</strong> Nível 1</div>
+          </div>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <!-- Modal Lightbox para Imagens -->
+  <div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
